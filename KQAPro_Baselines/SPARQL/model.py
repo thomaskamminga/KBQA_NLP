@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 
-from utils.BiGRU import GRU, BiGRU
+from BiGRU import GRU, BiGRU
 
 class SPARQLParser(nn.Module):
     def __init__(self, vocab, dim_word, dim_hidden, max_dec_len):

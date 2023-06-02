@@ -1,0 +1,30 @@
+2023-06-02 16:19:25,135 INFO     input_dir:C:\Users\thoma\Documents\Thomas\Technische wiskunde\jaar 4\NLP\KBQA_NLP\KQAPro.IID\processed_files
+2023-06-02 16:19:25,135 INFO     save_dir:C:\Users\thoma\Documents\Thomas\Technische wiskunde\jaar 4\NLP\KBQA_NLP\KQAPro_Baselines\SPARQL\checkpoint
+2023-06-02 16:19:25,135 INFO     lr:0.001
+2023-06-02 16:19:25,135 INFO     weight_decay:1e-05
+2023-06-02 16:19:25,135 INFO     num_epoch:100
+2023-06-02 16:19:25,135 INFO     batch_size:64
+2023-06-02 16:19:25,135 INFO     seed:666
+2023-06-02 16:19:25,135 INFO     dim_word:300
+2023-06-02 16:19:25,135 INFO     dim_hidden:1024
+2023-06-02 16:19:25,135 INFO     max_dec_len:100
+2023-06-02 16:19:25,151 INFO     Create train_loader and val_loader.........
+2023-06-02 16:19:29,091 INFO     Create model.........
+2023-06-02 16:19:38,650 INFO     SPARQLParser(
+  (word_embeddings): Embedding(48554, 300)
+  (word_dropout): Dropout(p=0.3, inplace=False)
+  (question_encoder): GRU(
+    (encoder): GRU(300, 1024, num_layers=2, batch_first=True, dropout=0.2)
+  )
+  (sparql_embeddings): Embedding(45693, 300)
+  (decoder): GRU(
+    (encoder): GRU(300, 1024, num_layers=2, batch_first=True, dropout=0.2)
+  )
+  (sparql_classifier): Sequential(
+    (0): Linear(in_features=1024, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=1024, out_features=45693, bias=True)
+  )
+  (att_lin): Linear(in_features=1024, out_features=1024, bias=True)
+)
+2023-06-02 16:19:38,650 INFO     Start training........

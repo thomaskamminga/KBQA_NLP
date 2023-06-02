@@ -8,12 +8,12 @@ import json
 from tqdm import tqdm
 from datetime import date
 
-from utils.misc import MetricLogger
-from utils.load_kb import DataForSPARQL
-from .data import DataLoader
-from .model import SPARQLParser
-from .sparql_engine import get_sparql_answer
-from .preprocess import postprocess_sparql_tokens
+from misc import MetricLogger
+from load_kb import DataForSPARQL
+from data import DataLoader
+from model import SPARQLParser
+from sparql_engine import get_sparql_answer
+from preprocess import postprocess_sparql_tokens
 
 import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)-8s %(message)s')
